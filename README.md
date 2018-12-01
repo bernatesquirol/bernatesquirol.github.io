@@ -10,7 +10,6 @@
 <a href="mailto:bernatesquirol@gmail.com">bernatesquirol@gmail.com</a>
   | <a href="https://devpost.com/bernatesquirol">devpost/bernatesquirol</a> | <a href="https://github.com/bernatesquirol">github/bernatesquirol</a>
 </div>
-
 ------
 
 ## Education
@@ -23,10 +22,6 @@
 `February 2018 - July 2018`<br>__EPFL, Lausanne, Switzerland__
 
 - Exchange program at [Computer Science Section](https://ic.epfl.ch/computer-science)
-
-`February 2019 - June 2019`<br>__Politechnika Warszawska, Warsaw, Poland__
-
-- Exchange program at [Faculty of Mathematics and Information Science](https://www.pw.edu.pl/engpw/Academics/Faculties/Faculty-of-Mathematics-and-Information-Science) 
 
 ------
 
