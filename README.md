@@ -23,6 +23,8 @@
 
 - Exchange program at [Computer Science Section](https://ic.epfl.ch/computer-science)
 
+
+
 ------
 
 ## Work experience
@@ -35,7 +37,17 @@
 
 `February 2018 - June 2018`<br>__Scratch teacher__, [TechSpark Academy](https://techsparkacademy.ch/en/home/)
 
-`July 2018 - February 2019`<br>__GIS developer__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
+`July 2018 - June 2019`<br>__GIS developer__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
+
+
+
+------
+
+## Papers
+
+`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://www.overleaf.com/read/fbrmkyrfxpnm): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)
+
+
 
 ------
 
@@ -46,3 +58,6 @@
 `September 2017 - January 2018`<br>[__Slimes__](https://enginyeriasofwareub.github.io/ES2017F2/): Turn-based multiplayer game (8-group project)
 
 `April 2018 - May 2018`<br>[__SpotifAI__](https://hci-spotifai.firebaseapp.com/#): Data-viz (graph) of Spotify user's preferred and recommended artists
+
+`December 2018`<br>[__Whatsapp Viz__](https://beta.observablehq.com/@bernatesquirol/whatsapp-viz): Whatsapp chat's charts. 
+
