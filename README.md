@@ -45,7 +45,7 @@
 
 ## Papers
 
-`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://www.overleaf.com/read/fbrmkyrfxpnm): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)
+`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)
 
 
 
