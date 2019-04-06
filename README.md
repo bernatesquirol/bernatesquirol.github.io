@@ -53,11 +53,12 @@
 
 ## Other projects
 
-`February 2017 - May 2017`<br>[__Königs__](https://play.google.com/store/apps/details?id=edu.ub.pis2016.pis18.konigs): Strategy game (3-group project)
+`February 2017 - May 2017`<br>[__Königs__](https://play.google.com/store/apps/details?id=edu.ub.pis2016.pis18.konigs): Strategy game (3-group project)<br>*Integrated software engineering, UB*
 
-`September 2017 - January 2018`<br>[__Slimes__](https://enginyeriasofwareub.github.io/ES2017F2/): Turn-based multiplayer game (8-group project)
+`September 2017 - January 2018`<br>[__Slimes__](https://enginyeriasofwareub.github.io/ES2017F2/): Turn-based multiplayer game (8-group project)<br>*Software engineering, UB*
 
-`April 2018 - May 2018`<br>[__SpotifAI__](https://hci-spotifai.firebaseapp.com/#): Data-viz (graph) of Spotify user's preferred and recommended artists
+`April 2018 - May 2018`<br>[__SpotifAI__](https://hci-spotifai.firebaseapp.com/#): Data-viz (graph) of Spotify user's preferred and recommended artists<br>*Human computer interaction, EPFL*
 
 `December 2018`<br>[__Whatsapp Viz__](https://beta.observablehq.com/@bernatesquirol/whatsapp-viz): Whatsapp chat's charts. 
 
+`March 2019`<br>[__Poisson's equation__](https://bernatesquirol.github.io/poisson_equation/): C resolution of the [Poisson's equation](<https://en.wikipedia.org/wiki/Poisson%27s_equation>)<br>*Numerical methods II, UB*
