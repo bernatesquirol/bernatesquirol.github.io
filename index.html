@@ -2,33 +2,35 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>README</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>README</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export p { white-space: pre-wrap; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
   .CodeMirror-gutters { display: none !important; }
 }
-#write li > figure:first-child { margin-top: -20px; }
+#write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
@@ -49,8 +51,9 @@ figure > table { margin: 0px !important; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 80px; }
+table.md-table td { min-width: 32px; }
 .CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -80,25 +83,24 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
-  #write { margin-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
-  @page { margin: 20mm 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
-p > img:only-child { display: block; margin: auto; }
-p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -129,16 +131,17 @@ kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
 .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
 table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
@@ -147,10 +150,6 @@ iframe { max-width: 100%; width: 100%; border: none; }
 
 
 :root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
-@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
-@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
-@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
-@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
 #write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
@@ -182,20 +181,20 @@ blockquote blockquote { padding-right: 0px; }
 table { padding: 0px; word-break: initial; }
 table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
 table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
-table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
-table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); margin: 0px; padding: 6px 13px; }
 table tr th:first-child, table tr td:first-child { margin-top: 0px; }
 table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
 .CodeMirror-lines { padding-left: 4px; }
 .code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
 .md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
-code { background-color: rgb(243, 244, 244); padding: 0px 4px 2px; }
-.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
 .md-task-list-item > input { margin-left: -1.3em; }
 @media print {
   html { font-size: 13px; }
   table, pre { break-inside: avoid; }
-  pre { word-wrap: break-word; }
+  pre { overflow-wrap: break-word; }
 }
 .md-fences { background-color: rgb(248, 248, 248); }
 #write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
@@ -219,22 +218,20 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 .html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
 #md-notification .btn { border: 0px; }
 .dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
 
 
-
-
-
- .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export os-windows' >
 <div  id='write'  class = 'is-node'><h1 id="profile-photo" style="text-align:center;padding-bottom:10;margin-bottom:10;margin-top:10">
     Bernat Esquirol Juanola
 </h1><div id="profile-photo" style="text-align:center;">
-    <img src="https://drive.google.com/thumbnail?id=14EZbi-0a9x2lC3LGZXLtJQ3JyrvqP5zw" style="border-radius: 50px" width="100px" onerror="this.style.display = 'none';">
+    <img src="https://drive.google.com/thumbnail?id=14EZbi-0a9x2lC3LGZXLtJQ3JyrvqP5zw" style="border-radius: 50px" width="100px">
 </div><div id="webaddress" style="text-align:center;padding-bottom:10">
 <a href="mailto:bernatesquirol@gmail.com">bernatesquirol@gmail.com</a>
   | <a href="https://devpost.com/bernatesquirol">devpost/bernatesquirol</a> | <a href="https://github.com/bernatesquirol">github/bernatesquirol</a>
-</div><hr /><h2><a name='header-n7' class='md-header-anchor '></a>Education</h2><p><code>2014-2019</code><br><strong>Universitat de Barcelona, Barcelona, Spain</strong></p><ul><li>Bachelor in <a href='https://mat.ub.edu/graumatematiques/'>Mathematics</a></li><li>Bachelor in <a href='https://mat.ub.edu/grauinformatica/'>Computer Science</a></li></ul><p><code>February 2018 - July 2018</code><br><strong>EPFL, Lausanne, Switzerland</strong></p><ul><li>Exchange program at <a href='https://ic.epfl.ch/computer-science'>Computer Science Section</a></li></ul><p>&nbsp;</p><hr /><h2><a name='header-n20' class='md-header-anchor '></a>Work experience</h2><p><code>February 2016; February 2017</code><br><strong>IT technician</strong>, <a href='https://www.mwcbarcelona.com/'>MWC</a> @ Fira Barcelona</p><p><code>July 2015 - September 2016</code><br><strong>Full-stack web developer</strong>, <a href='https://www.linkedin.com/company/getupcode-com/'>Getupcode.com</a></p><p><code>June 2017 - September 2017</code><br><strong>Web developer</strong>, <a href='https://nauticrab.com/'>Nauticrab</a> </p><p><code>February 2018 - June 2018</code><br><strong>Scratch teacher</strong>, <a href='https://techsparkacademy.ch/en/home/'>TechSpark Academy</a></p><p><code>July 2018 - June 2019</code><br><strong>GIS developer</strong>, <a href='http://urbanisme.amb.cat/'>PDU, Àrea Metropolitana de Barcelona (AMB)</a></p><p>&nbsp;</p><hr /><h2><a name='header-n28' class='md-header-anchor '></a>Papers</h2><p><code>February 2018 - May 2018</code><br><a href='https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf'><strong>Distributed Asynchronous SGD</strong></a>: Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)</p><p>&nbsp;</p><hr /><h2><a name='header-n32' class='md-header-anchor '></a>Other projects</h2><p><code>February 2017 - May 2017</code><br><a href='https://play.google.com/store/apps/details?id=edu.ub.pis2016.pis18.konigs'><strong>Königs</strong></a>: Strategy game (3-group project)<br><em>Integrated software engineering, UB</em></p><p><code>September 2017 - January 2018</code><br><a href='https://enginyeriasofwareub.github.io/ES2017F2/'><strong>Slimes</strong></a>: Turn-based multiplayer game (8-group project)<br><em>Software engineering, UB</em></p><p><code>April 2018 - May 2018</code><br><a href='https://hci-spotifai.firebaseapp.com/#'><strong>SpotifAI</strong></a>: Data-viz (graph) of Spotify user&#39;s preferred and recommended artists<br><em>Human computer interaction, EPFL</em></p><p><code>December 2018</code><br><a href='https://beta.observablehq.com/@bernatesquirol/whatsapp-viz'><strong>Whatsapp Viz</strong></a>: Whatsapp chat&#39;s charts. </p><p><code>March 2019</code><br><a href='https://bernatesquirol.github.io/poisson_equation/'><strong>Poisson&#39;s equation</strong></a>: C resolution of the <a href='https://en.wikipedia.org/wiki/Poisson%27s_equation'>Poisson&#39;s equation</a><br><em>Numerical methods II, UB</em></p></div>
+</div><hr /><h2><a name="education" class="md-header-anchor"></a><span>Education</span></h2><p><strong><span>Universitat de Barcelona, Barcelona, Spain</span></strong></p><p><code>2014-2019</code><br></p><ul><li><span>Bachelor in </span><a href='https://mat.ub.edu/graumatematiques/'><span>Mathematics</span></a></li><li><span>Bachelor in </span><a href='https://mat.ub.edu/grauinformatica/'><span>Computer Science</span></a></li></ul><p><code>September 2019 - June 2020</code><br></p><ul><li><span>Master in the </span><a href='http://www.ub.edu/datascience/master/'><span>Fundamental Principles of Data Science</span></a></li></ul><p><strong><span>EPFL, Lausanne, Switzerland</span></strong></p><p><code>February 2018 - July 2018</code><br></p><ul><li><span>Exchange program at </span><a href='https://ic.epfl.ch/computer-science'><span>Computer Science Section</span></a></li></ul><hr /><h2><a name="work-experience" class="md-header-anchor"></a><span>Work experience</span></h2><p><code>February 2016; February 2017</code><br><strong><span>IT technician</span></strong><span>, </span><a href='https://www.mwcbarcelona.com/'><span>MWC</span></a><span> @ Fira Barcelona</span></p><p><code>July 2015 - September 2016</code><br><strong><span>Full-stack web developer</span></strong><span>, </span><a href='https://www.linkedin.com/company/getupcode-com/'><span>Getupcode.com</span></a></p><p><code>February 2018 - June 2018</code><br><strong><span>Scratch teacher</span></strong><span>, </span><a href='https://techsparkacademy.ch/en/home/'><span>TechSpark Academy</span></a></p><p><code>July 2018 - June 2019</code><br><strong><span>GIS developer</span></strong><span>, </span><a href='http://urbanisme.amb.cat/'><span>PDU, Àrea Metropolitana de Barcelona (AMB)</span></a></p><p><code>July 2019 - December 2019</code><br><strong><span>Front-end developer</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>January 2020 - July 2020</code><br><strong><span>Researcher</span></strong><span>, </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems</span></a></p><hr /><h2><a name="papers" class="md-header-anchor"></a><span>Papers</span></h2><p><code>February 2018 - May 2018</code><br><a href='https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf'><strong><span>Distributed Asynchronous SGD</span></strong></a><span>: Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)</span></p><p>&nbsp;</p><hr /><h2><a name="other-projects" class="md-header-anchor"></a><span>Other projects</span></h2><p><code>February 2017 - May 2017</code><br><a href='https://play.google.com/store/apps/details?id=edu.ub.pis2016.pis18.konigs'><strong><span>Königs</span></strong></a><span>: Strategy game (3-group project)</span><br><em><span>Integrated software engineering, UB</span></em></p><p><code>September 2017 - January 2018</code><br><a href='https://enginyeriasofwareub.github.io/ES2017F2/'><strong><span>Slimes</span></strong></a><span>: Turn-based multiplayer game (8-group project)</span><br><em><span>Software engineering, UB</span></em></p><p><code>April 2018 - May 2018</code><br><a href='https://hci-spotifai.firebaseapp.com/#'><strong><span>SpotifAI</span></strong></a><span>: Data-viz (graph) of Spotify user&#39;s preferred and recommended artists</span><br><em><span>Human computer interaction, EPFL</span></em></p><p><code>December 2018</code><br><a href='https://beta.observablehq.com/@bernatesquirol/whatsapp-viz'><strong><span>Whatsapp Viz</span></strong></a><span>: Whatsapp chat&#39;s charts. </span></p><p><code>March 2019</code><br><a href='https://bernatesquirol.github.io/poisson_equation/'><strong><span>Poisson&#39;s equation</span></strong></a><span>: C resolution of the </span><a href='https://en.wikipedia.org/wiki/Poisson%27s_equation'><span>Poisson&#39;s equation</span></a><br><em><span>Numerical methods II, UB</span></em></p><p>&nbsp;</p></div>
 </body>
 </html>

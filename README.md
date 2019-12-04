@@ -14,16 +14,22 @@
 
 ## Education
 
-`2014-2019`<br>__Universitat de Barcelona, Barcelona, Spain__
+__Universitat de Barcelona, Barcelona, Spain__
+
+`2014-2019`<br>
 
 - Bachelor in [Mathematics](https://mat.ub.edu/graumatematiques/)
 - Bachelor in [Computer Science](https://mat.ub.edu/grauinformatica/)
 
-`February 2018 - July 2018`<br>__EPFL, Lausanne, Switzerland__
+`September 2019 - June 2020`<br>
+
+- Master in the [Fundamental Principles of Data Science](http://www.ub.edu/datascience/master/)
+
+__EPFL, Lausanne, Switzerland__
+
+`February 2018 - July 2018`<br>
 
 - Exchange program at [Computer Science Section](https://ic.epfl.ch/computer-science)
-
-
 
 ------
 
@@ -33,13 +39,13 @@
 
 `July 2015 - September 2016`<br>__Full-stack web developer__, [Getupcode.com](https://www.linkedin.com/company/getupcode-com/)
 
-`June 2017 - September 2017`<br>__Web developer__, [Nauticrab](https://nauticrab.com/) 
-
 `February 2018 - June 2018`<br>__Scratch teacher__, [TechSpark Academy](https://techsparkacademy.ch/en/home/)
 
 `July 2018 - June 2019`<br>__GIS developer__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
 
+`July 2019 - December 2019`<br>__Front-end developer__, [bestiario](http://bestiario.org/)
 
+`January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems](http://ubics.ub.edu/)
 
 ------
 
@@ -62,3 +68,4 @@
 `December 2018`<br>[__Whatsapp Viz__](https://beta.observablehq.com/@bernatesquirol/whatsapp-viz): Whatsapp chat's charts. 
 
 `March 2019`<br>[__Poisson's equation__](https://bernatesquirol.github.io/poisson_equation/): C resolution of the [Poisson's equation](<https://en.wikipedia.org/wiki/Poisson%27s_equation>)<br>*Numerical methods II, UB*
+
