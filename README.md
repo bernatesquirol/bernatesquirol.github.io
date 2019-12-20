@@ -37,15 +37,15 @@ __EPFL, Lausanne, Switzerland__
 
 `February 2016; February 2017`<br>__IT technician__, [MWC](https://www.mwcbarcelona.com/) @ Fira Barcelona
 
-`July 2015 - September 2016`<br>__Full-stack web developer__, [Getupcode.com](https://www.linkedin.com/company/getupcode-com/)
+`July 2015 - September 2016`<br>__Full-stack developer__, [Getupcode.com](https://www.linkedin.com/company/getupcode-com/)
 
 `February 2018 - June 2018`<br>__Scratch teacher__, [TechSpark Academy](https://techsparkacademy.ch/en/home/)
 
-`July 2018 - June 2019`<br>__GIS developer__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
+`July 2018 - June 2019`<br>__GIS data analyst__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
 
 `July 2019 - December 2019`<br>__Front-end developer__, [bestiario](http://bestiario.org/)
 
-`January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems](http://ubics.ub.edu/)
+`January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UB)](http://ubics.ub.edu/)
 
 ------
 
@@ -53,19 +53,14 @@ __EPFL, Lausanne, Switzerland__
 
 `February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)
 
-
-
 ------
 
-## Other projects
+## Hackathons
 
-`February 2017 - May 2017`<br>[__Königs__](https://play.google.com/store/apps/details?id=edu.ub.pis2016.pis18.konigs): Strategy game (3-group project)<br>*Integrated software engineering, UB*
+`May 2019`: Winner @ [Barcelona Copernicus Hackathon](https://kimglobal.com/ca/evento/copernicus-hackathon-barcelona/)
 
-`September 2017 - January 2018`<br>[__Slimes__](https://enginyeriasofwareub.github.io/ES2017F2/): Turn-based multiplayer game (8-group project)<br>*Software engineering, UB*
+`November 2019`: Winner @ [Novartis datathon](https://godatathon.com/)
 
-`April 2018 - May 2018`<br>[__SpotifAI__](https://hci-spotifai.firebaseapp.com/#): Data-viz (graph) of Spotify user's preferred and recommended artists<br>*Human computer interaction, EPFL*
+<hr/>
 
-`December 2018`<br>[__Whatsapp Viz__](https://beta.observablehq.com/@bernatesquirol/whatsapp-viz): Whatsapp chat's charts. 
-
-`March 2019`<br>[__Poisson's equation__](https://bernatesquirol.github.io/poisson_equation/): C resolution of the [Poisson's equation](<https://en.wikipedia.org/wiki/Poisson%27s_equation>)<br>*Numerical methods II, UB*
-
+Other projects @ [devpost](https://devpost.com/bernatesquirol)
