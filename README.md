@@ -45,13 +45,23 @@ __EPFL, Lausanne, Switzerland__
 
 `July 2019 - December 2019`<br>__Front-end developer__, [bestiario](http://bestiario.org/)
 
-`January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UB)](http://ubics.ub.edu/)
+`January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)
+
+`February 2020 - July 2020`<br>**Data scientist**, [bestiario](http://bestiario.org/)
 
 ------
 
 ## Papers
 
-`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project)
+`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf): Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project) @ EPFL
+
+`February 2019 - June 2019`<br>
+
+**[Data flow control framework for indicator-based policy making: an urban planning example](http://diposit.ub.edu/dspace/handle/2445/143519)**: tool based on draw.io to docuement and control the data flow of an indicator-based policy in the urban planning environment @ AMB
+
+`February 2020 - June 2020`<br>
+
+**Effects of COVID19 in Twitter profile activity and ego-networks** @ UBICS
 
 ------
 
@@ -61,6 +71,15 @@ __EPFL, Lausanne, Switzerland__
 
 `November 2019`: Winner @ [Novartis datathon](https://godatathon.com/)
 
+`March 2020`: Winner @ [MUV Hackathon Barcelona](https://barcelona.muv2020.eu/Hackathon/)
+
+`April 2020`: 7th position @ [Hackovid](https://hackovid.cat/solutions?locale=en&filter[search_text]=splittt)
+
+`April 2020`: Participant @ [MUV Datathon](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json)
+
 <hr/>
 
 Other projects @ [devpost](https://devpost.com/bernatesquirol)
+
+ObservableHQ [profile](https://observablehq.com/@bernatesquirol)
+
