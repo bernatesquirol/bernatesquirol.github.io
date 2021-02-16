@@ -35,7 +35,7 @@ __EPFL, Lausanne, Switzerland__
 
 ## Work experience
 
-`February 2020 - January 2021`<br>**Data scientist**, [bestiario](http://bestiario.org/)
+`February 2020 -  `<br>**Data scientist**, [bestiario](http://bestiario.org/)
 
 `January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)
 

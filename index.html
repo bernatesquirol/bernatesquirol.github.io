@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>README</title><link href='https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' /><link href='https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<title>README</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
@@ -159,72 +159,27 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 }
 
 
-@include-when-export url(https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
-@include-when-export url(https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext);
-
-:root {
-	--control-text-color: #777;
+html {
+	font-size: 19px;
 }
 
-/**
- * forked from pixyll.com
- * MIT license
- */
-
-h1,
-.h1,
-.f1 {
-	font-size: 2rem;
-	line-height: 2.5rem;
+html, body {
+	margin: auto;
+	background: #fefefe;
 }
-h2,
-.h2,
-.f2 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-h3,
-.h3,
-.f3 {
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-}
-p,
-.p,
-.f4,
-h4,
-h5,
-h6,
-dl,
-ol,
-ul,
-pre[cid],
-div[cid],
-#typora-source {
-	font-size: 1.125rem;
-	line-height: 1.5rem;
-}
-
-h4 {
-	font-size: 1.13rem;
-}
-/*
- Pixyll
- A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
- Best served with BASSCSS (http://jxnblk.github.io/basscss)
- Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
-
-*/
-
 body {
-	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
-	line-height: 1.5rem;
-	font-weight: 400;
+	font-family: "Vollkorn", Palatino, Times;
+	color: #333;
+	line-height: 1.4;
+	text-align: justify;
 }
 
 #write {
-	max-width: 914px;
-	color: #333;
+	max-width: 960px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	line-height: 1.53;
+	padding-top: 40px;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -233,354 +188,217 @@ body {
 	}
 }
 
-@media only screen and (min-width: 1700px) {
-	#write {
-		max-width: 1200px;
-	}
+/* Typography
+-------------------------------------------------------- */
+
+#write>h1:first-child,
+h1 {
+	margin-top: 1.6em;
+	font-weight: normal;
 }
 
-img {
-	width: auto;
-	max-width: 100%;
-}
-body {
-	font-size: 1.5rem;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+h1 {
+	font-size:3em;
 }
 
-.ty-table-edit {
-	background: #ededed;
+h2 {
+	margin-top:2em;
+	font-weight: normal;
 }
 
-table {
-	width: 100%;
-	font-size: 1.125rem;
-}
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
-	padding: 12px;
-	line-height: 1.2;
-	vertical-align: top;
-	border-top: 1px solid #333;
-}
-table > thead > tr > th {
-	vertical-align: bottom;
-	border-bottom: 2px solid #333;
-}
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td {
-	border-top: 0;
-}
-table > tbody + tbody {
-	border-top: 2px solid #333;
-}
-p {
-	font-weight: 300;
-	line-height: 1.5;
-}
-abbr {
-	border-bottom: 1px black dotted;
-	cursor: help;
-}
-pre,
-code {
-	font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-code,
-.md-fences  {
-	color: #7a7a7a;
-}
-
-.md-fences {
-	padding: 1.125em;
-	margin-bottom: 0.88em;
-	font-size: 1rem;
-	border: 1px solid #7a7a7a;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-}
-
-blockquote {
-	padding: 1.33em;
+h3 {
+	font-weight: normal;
 	font-style: italic;
-	border-left: 5px solid #7a7a7a;
-	color: #555;
-}
-blockquote em {
-	color: #000;
-}
-blockquote footer {
-	font-size: .85rem;
-	font-style: normal;
-	background-color: #fff;
-	color: #7a7a7a;
-	border-color: transparent;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
-	margin: 1em 0 0.5em;
-}
-@media screen and (min-width: 48em) {
-	.h1,
-	h1 {
-		font-size: 3.250rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.298rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.625rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-	#write>h4.md-focus:before,
-	#write>h5.md-focus:before,
-	#write>h6.md-focus:before{
-		top: 1px;
-	}
-	.p,
-	p,
-	li {
-		font-size: 1.25rem;
-		line-height: 1.8;
-	}
-	table {
-		font-size: 1.25rem;
-	}
-}
-@media (max-width: 48em) {
-	blockquote {
-		margin-left: 1rem;
-		margin-right: 0;
-		padding: 0.5em;
-	}
-	.h1,
-	h1 {
-		font-size: 2.827rem;
-	}
-	.h2,
-	h2 {
-		font-size: 1.999rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.413rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-}
-@media screen and (min-width: 64em) {
-	.h1,
-	h1 {
-		font-size: 4.498rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.29rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.9rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.591rem;
-	}
-	#write>h4.md-focus:before{
-		top:4px;
-	}
-}
-a {
-	color: #463F5C;
-	text-decoration: underline;
+	margin-top: 3em;
 }
 
-#write {
-	padding-top: 2rem;
+h1, 
+h2, 
+h3{
+	text-align: center;
 }
 
-#write pre.md-meta-block {
-	min-height: 35px;
-	padding: 0.5em 1em;
-	white-space: pre;
-	border: 0px;
+h2:after{
+	border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+}
 
-	border-left: 30px #f8f8f8 solid;
-	border-right: 30px #f8f8f8 solid;
-	width: 100vw;
-	max-width: calc(100% + 60px);
+h1+h2, h2+h3 {
+	margin-top: 0.83em;
+}
 
-	margin-left: -30px;
-	margin-bottom: 2em;
-	margin-top: -2010px;
-	padding-top: 2000px;
-	padding-bottom: 10px;
-	line-height: 1.5em;
-	color: #7a7a7a;
-	background-color: #fafafa;
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: 300;
-	clear: both;
-	padding-left: 0;
-	font-size:1.125rem;
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
 }
-.md-image>.md-meta {
-	color: #463F5C
+ul {
+	list-style: square;
+	padding-left: 1.2em;
 }
-.footnotes {
-	font-size:1.1rem;
+ol {
+	padding-left: 1.2em;
 }
-.md-tag {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
 }
-.code-tooltip {
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
 	background: white;
 }
-.code-tooltip-content {
-	font-size: 1.1rem;
+.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid #ddd;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: #2484c1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+.ty-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
 }
 
 .task-list{
-	padding-left: 0;
+	padding:0;
 }
 
 .md-task-list-item {
-	padding-left:34px;
+	padding-left: 1.6rem;
 }
 
-.md-task-list-item > input{
-	width: 1.25rem;
-	height: 1.25rem;
-	display: block;
-	-webkit-appearance: initial;
-	top: -0.2rem;
-	margin-left: -1.6em;
-	margin-top: calc(1rem - 7px);
-	border: none;
-}
-
-.md-task-list-item > input:focus{
-	outline: none;
-	box-shadow: none;
-}
-
-.md-task-list-item > input:before{
-	border: 1px solid #555;
-	border-radius: 1.5rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background: #fff;
-	content: ' ';
-	transition: background-color 200ms ease-in-out;
-	display: block;
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.33333333rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #fefefe;
 }
 
 .md-task-list-item > input:checked:before,
 .md-task-list-item > input[checked]:before{
-	background: #333;
-	border-width: 2px;
-	display:inline-block;
-	transition: background-color 200ms ease-in-out;
+	color: inherit;
 }
-
-.md-task-list-item > input:checked:after,
-.md-task-list-item > input[checked]:after {
-	opacity: 1;
-}
-
-.md-task-list-item > input:after {
-	opacity: 1;
-	-webkit-transition: opacity 0.05s ease-in-out;
-	-moz-transition: opacity 0.05s ease-in-out;
-	transition: opacity 0.05s ease-in-out;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 0.4375rem;
-	left: 0.28125rem;
-	width: 0.9375rem;
-	height: 0.5rem;
-	border: 3px solid #fff;
-	border-top: 0;
-	border-right: 0;
-	content: ' ';
-	opacity: 0;
-}
-
 .md-tag {
-	color:inherit;
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
 }
 
-.md-toc:focus .md-toc-content{
-	margin-top: 19px;
+.md-toc {
+	margin-top: 40px;
 }
 
-#typora-sidebar {
-	font-size:1rem !important;
-}
-
-.html-for-mac #typora-sidebar {
-	background-color:white;
-}
-
-.outline-content li, .outline-content ul {
-	font-size:1rem !important;
-}
-
-.outline-title {
-	line-height: inherit;
-	margin-top: 10px;
-}
-
-.outline-expander {
-	width: 18px;
+.md-toc-content {
+	padding-bottom: 20px;
 }
 
 .outline-expander:before {
- 	content: "+";
-	font-family: inherit;
-	color: rgb(108, 108, 108); 
-  	font-size: 1.5rem;
- 	top: 0.1rem;
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
 }
 
-.outline-expander:hover:before {
-	content: "+";
-}
-
-.outline-item-open>.outline-item>.outline-expander:before{
-	content: "-";
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
 }
 
 /** source code mode */
@@ -589,8 +407,9 @@ a {
     color: #6A6A6A;
 }
 
-.os-windows #typora-source {
-	font-family: inherit;
+.html-for-mac #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 
 .cm-s-typora-default .cm-header, 
@@ -603,19 +422,23 @@ a {
 	color: #777777;
 }
 
-.md-diagram-panel {
-	margin-top: 24px;
-	margin-left: -1.2em;
+.typora-node .file-list-item-parent-loc, 
+.typora-node .file-list-item-time, 
+.typora-node .file-list-item-summary {
+	font-family: arial, sans-serif;
+}
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: calc(1rem - 12px);
 }
 
 .md-mathjax-midline {
 	background: #fafafa;
 }
 
-.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
-    bottom: -3.4em;
+.md-fences .code-tooltip {
+	bottom: -2em !important;
 }
 
 .dropdown-menu .divider {
@@ -630,9 +453,10 @@ a {
     Bernat Esquirol Juanola
 </h1><div id="profile-photo" style="text-align:center;">
     <img src="https://drive.google.com/thumbnail?id=14EZbi-0a9x2lC3LGZXLtJQ3JyrvqP5zw" style="border-radius: 50px" width="100px">
-</div><div id="webaddress" style="text-align:center;padding-bottom:10px;line-height:40px">
+</div>
+<div id="webaddress" style="text-align:center;padding-bottom:10px;line-height:40px">
 <a href="mailto:bernatesquirol@gmail.com">bernatesquirol@gmail.com</a> <br>
   <a href="https://devpost.com/bernatesquirol">devpost/bernatesquirol</a> | <a href="https://observablehq.com/@bernatesquirol">observablehq/bernatesquirol</a> | <a href="https://github.com/bernatesquirol">github/bernatesquirol</a> 
-</div><hr /><h2><a name="education" class="md-header-anchor"></a><span>Education</span></h2><p><strong><span>Universitat de Barcelona, Barcelona, Spain</span></strong></p><p><code>September 2019 - June 2020</code><br></p><ul><li><span>Master in the </span><a href='http://www.ub.edu/datascience/master/'><span>Fundamental Principles of Data Science</span></a></li></ul><p><code>2014-2019</code><br></p><ul><li><span>Bachelor in </span><a href='https://mat.ub.edu/graumatematiques/'><span>Mathematics</span></a></li><li><span>Bachelor in </span><a href='https://mat.ub.edu/grauinformatica/'><span>Computer Science</span></a></li></ul><p><strong><span>EPFL, Lausanne, Switzerland</span></strong></p><p><code>February 2018 - July 2018</code><br></p><ul><li><span>Exchange program at </span><a href='https://ic.epfl.ch/computer-science'><span>Computer Science Section</span></a></li></ul><hr /><h2><a name="work-experience" class="md-header-anchor"></a><span>Work experience</span></h2><p><code>February 2020 - January 2021</code><br><strong><span>Data scientist</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>January 2020 - July 2020</code><br><strong><span>Researcher</span></strong><span>, </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a></p><p><code>July 2019 - December 2019</code><br><strong><span>Front-end developer</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>July 2018 - June 2019</code><br><strong><span>GIS data analyst</span></strong><span>, </span><a href='http://urbanisme.amb.cat/'><span>PDU, Àrea Metropolitana de Barcelona (AMB)</span></a></p><p><code>February 2018 - June 2018</code><br><strong><span>Scratch teacher</span></strong><span>, </span><a href='https://techsparkacademy.ch/en/home/'><span>TechSpark Academy</span></a></p><p><code>July 2015 - September 2016</code><br><strong><span>Full-stack developer</span></strong><span>, </span><a href='https://www.linkedin.com/company/getupcode-com/'><span>Getupcode.com</span></a></p><p><code>February 2016; February 2017</code><br><strong><span>IT technician</span></strong><span>, </span><a href='https://www.mwcbarcelona.com/'><span>MWC</span></a><span> @ Fira Barcelona</span></p><hr /><h2><a name="papers" class="md-header-anchor"></a><span>Papers</span></h2><p><code>February 2020 - June 2020</code><br><strong><a href='https://arxiv.org/abs/2012.06550'><span>Characterizing Twitter users behaviour during the Spanish Covid-19 first wave</span></a></strong><span>, with </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Prignano%2C+L'><span>Luce Prignano</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Díaz-Guilera%2C+A'><span>Albert Díaz-Guilera</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Cozzo%2C+E'><span>Emanuele Cozzo</span></a><span> @ </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a><br></p><p><code>February 2019 - June 2019</code><br><strong><a href='http://diposit.ub.edu/dspace/handle/2445/143519'><span>Data flow control framework for indicator-based policy making: an urban planning example</span></a></strong><span>, with </span><a href='https://scholar.google.es/citations?user=Fr3EgV8AAAAJ'><span>Javier Ortigosa</span></a><span> @ AMB</span><br><span>A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment</span></p><p><code>February 2018 - May 2018</code><br><a href='https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf'><strong><span>Distributed Asynchronous SGD</span></strong></a><span> </span><br><span>Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project) @ EPFL</span></p><hr /><h2><a name="hackathons" class="md-header-anchor"></a><span>Hackathons</span></h2><p><code>April 2020</code><span>: Participant @ </span><a href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json'><span>MUV Datathon</span></a></p><p><code>April 2020</code><span>: 7th position @ </span><a href='https://hackovid.cat/solutions?locale=en&amp;filter[search_text]=splittt'><span>Hackovid</span></a></p><p><code>March 2020</code><span>: Winner @ </span><a href='https://barcelona.muv2020.eu/Hackathon/'><span>MUV Hackathon Barcelona</span></a></p><p><code>November 2019</code><span>: Winner @ </span><a href='https://godatathon.com/'><span>Novartis datathon</span></a></p><p><code>May 2019</code><span>: Winner @ </span><a href='https://kimglobal.com/ca/evento/copernicus-hackathon-barcelona/'><span>Barcelona Copernicus Hackathon</span></a></p><p>&nbsp;</p><p>&nbsp;</p><p><span>;)</span></p></div>
+</div><hr /><h2><a name="education" class="md-header-anchor"></a><span>Education</span></h2><p><strong><span>Universitat de Barcelona, Barcelona, Spain</span></strong></p><p><code>September 2019 - June 2020</code><br></p><ul><li><span>Master in the </span><a href='http://www.ub.edu/datascience/master/'><span>Fundamental Principles of Data Science</span></a></li></ul><p><code>2014-2019</code><br></p><ul><li><span>Bachelor in </span><a href='https://mat.ub.edu/graumatematiques/'><span>Mathematics</span></a></li><li><span>Bachelor in </span><a href='https://mat.ub.edu/grauinformatica/'><span>Computer Science</span></a></li></ul><p><strong><span>EPFL, Lausanne, Switzerland</span></strong></p><p><code>February 2018 - July 2018</code><br></p><ul><li><span>Exchange program at </span><a href='https://ic.epfl.ch/computer-science'><span>Computer Science Section</span></a></li></ul><hr /><h2><a name="work-experience" class="md-header-anchor"></a><span>Work experience</span></h2><p><code>February 2020 -</code><br><strong><span>Data scientist</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>January 2020 - July 2020</code><br><strong><span>Researcher</span></strong><span>, </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a></p><p><code>July 2019 - December 2019</code><br><strong><span>Front-end developer</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>July 2018 - June 2019</code><br><strong><span>GIS data analyst</span></strong><span>, </span><a href='http://urbanisme.amb.cat/'><span>PDU, Àrea Metropolitana de Barcelona (AMB)</span></a></p><p><code>February 2018 - June 2018</code><br><strong><span>Scratch teacher</span></strong><span>, </span><a href='https://techsparkacademy.ch/en/home/'><span>TechSpark Academy</span></a></p><p><code>July 2015 - September 2016</code><br><strong><span>Full-stack developer</span></strong><span>, </span><a href='https://www.linkedin.com/company/getupcode-com/'><span>Getupcode.com</span></a></p><p><code>February 2016; February 2017</code><br><strong><span>IT technician</span></strong><span>, </span><a href='https://www.mwcbarcelona.com/'><span>MWC</span></a><span> @ Fira Barcelona</span></p><hr /><h2><a name="papers" class="md-header-anchor"></a><span>Papers</span></h2><p><code>February 2020 - June 2020</code><br><strong><a href='https://arxiv.org/abs/2012.06550'><span>Characterizing Twitter users behaviour during the Spanish Covid-19 first wave</span></a></strong><span>, with </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Prignano%2C+L'><span>Luce Prignano</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Díaz-Guilera%2C+A'><span>Albert Díaz-Guilera</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Cozzo%2C+E'><span>Emanuele Cozzo</span></a><span> @ </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a><br></p><p><code>February 2019 - June 2019</code><br><strong><a href='http://diposit.ub.edu/dspace/handle/2445/143519'><span>Data flow control framework for indicator-based policy making: an urban planning example</span></a></strong><span>, with </span><a href='https://scholar.google.es/citations?user=Fr3EgV8AAAAJ'><span>Javier Ortigosa</span></a><span> @ AMB</span><br><span>A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment</span></p><p><code>February 2018 - May 2018</code><br><a href='https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf'><strong><span>Distributed Asynchronous SGD</span></strong></a><span> </span><br><span>Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project) @ EPFL</span></p><hr /><h2><a name="hackathons" class="md-header-anchor"></a><span>Hackathons</span></h2><p><code>April 2020</code><span>: Participant @ </span><a href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json'><span>MUV Datathon</span></a></p><p><code>April 2020</code><span>: 7th position @ </span><a href='https://hackovid.cat/solutions?locale=en&amp;filter[search_text]=splittt'><span>Hackovid</span></a></p><p><code>March 2020</code><span>: Winner @ </span><a href='https://barcelona.muv2020.eu/Hackathon/'><span>MUV Hackathon Barcelona</span></a></p><p><code>November 2019</code><span>: Winner @ </span><a href='https://godatathon.com/'><span>Novartis datathon</span></a></p><p><code>May 2019</code><span>: Winner @ </span><a href='https://kimglobal.com/ca/evento/copernicus-hackathon-barcelona/'><span>Barcelona Copernicus Hackathon</span></a></p><p>&nbsp;</p><p>&nbsp;</p><p><span>;)</span></p></div>
 </body>
 </html>
