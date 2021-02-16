@@ -39,9 +39,13 @@ __EPFL, Lausanne, Switzerland__
 
 `January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)
 
+- **[Characterizing Twitter users behaviour during the Spanish Covid-19 first wave](https://arxiv.org/abs/2012.06550)** [[VIDEO]](https://www.youtube.com/watch?v=6PgbidTgZeE), with [Luce Prignano](https://arxiv.org/search/cs?searchtype=author&query=Prignano%2C+L), [Albert Díaz-Guilera](https://arxiv.org/search/cs?searchtype=author&query=Díaz-Guilera%2C+A), [Emanuele Cozzo](https://arxiv.org/search/cs?searchtype=author&query=Cozzo%2C+E) @ [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)<br>
+
 `July 2019 - December 2019`<br>__Front-end developer__, [bestiario](http://bestiario.org/)
 
 `July 2018 - June 2019`<br>__GIS data analyst__, [PDU, Àrea Metropolitana de Barcelona (AMB)](http://urbanisme.amb.cat/)
+
+- **[Data flow control framework for indicator-based policy making: an urban planning example](http://diposit.ub.edu/dspace/handle/2445/143519)**, A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment, with [Javier Ortigosa](https://scholar.google.es/citations?user=Fr3EgV8AAAAJ) @ AMB<br>
 
 `February 2018 - June 2018`<br>__Scratch teacher__, [TechSpark Academy](https://techsparkacademy.ch/en/home/)
 
@@ -51,17 +55,13 @@ __EPFL, Lausanne, Switzerland__
 
 ------
 
-## Papers
+## Other
 
-`February 2020 - June 2020`<br>**[Characterizing Twitter users behaviour during the Spanish Covid-19 first wave](https://arxiv.org/abs/2012.06550)**, with [Luce Prignano](https://arxiv.org/search/cs?searchtype=author&query=Prignano%2C+L), [Albert Díaz-Guilera](https://arxiv.org/search/cs?searchtype=author&query=Díaz-Guilera%2C+A), [Emanuele Cozzo](https://arxiv.org/search/cs?searchtype=author&query=Cozzo%2C+E) @ [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)<br>
+#### Volunteering
 
-`February 2019 - June 2019`<br>**[Data flow control framework for indicator-based policy making: an urban planning example](http://diposit.ub.edu/dspace/handle/2445/143519)**, with [Javier Ortigosa](https://scholar.google.es/citations?user=Fr3EgV8AAAAJ) @ AMB<br>A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment
+`September 2020 - :` Helping [ASSÍS Centre d'Acollida](https://www.assis.cat/) analyse and visualize homeless people data @ [DataForGoodBCN](https://twitter.com/dataforgoodbcn)
 
-`February 2018 - May 2018`<br>[__Distributed Asynchronous SGD__](https://github.com/bernatesquirol/bernatesquirol.github.io/blob/master/Distributed_Asynchronous_SGD.pdf) <br>Implementation of asynchronous stochastic gradient descent to optimize a support vector machine (3-group project) @ EPFL
-
-------
-
-## Hackathons
+#### Hackathons
 
 `April 2020`: Participant @ [MUV Datathon](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json)
 
