@@ -59,9 +59,11 @@ __EPFL, Lausanne, Switzerland__
 
 #### Volunteering
 
-`September 2020 - :` Helping [ASSÍS Centre d'Acollida](https://www.assis.cat/) analyse and visualize homeless people data @ [DataForGoodBCN](https://twitter.com/dataforgoodbcn)
+`September 2020 - September 2021:` Helping [ASSÍS Centre d'Acollida](https://www.assis.cat/) analyse and visualize homeless people data @ [DataForGoodBCN](https://twitter.com/dataforgoodbcn)
 
 #### Hackathons
+
+`October 2021`: 2nd prize @ [EducationalHack by Ableton, AI+Music festival](https://aimusicfestival.eu/es/programs/2021/areas/hackathons)
 
 `April 2020`: Participant @ [MUV Datathon](https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json)
 
