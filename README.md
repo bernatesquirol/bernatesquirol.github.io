@@ -14,13 +14,18 @@
 
 ## Work experience
 
+`March 2024 -`<br>**Game developer / producer**, [mut](https://mut.mmm.page/)
+
+- Solo dev adventure creating mut, a game to understand music
+
 `February 2020 - `<br>**Data scientist**, [bestiario](http://bestiario.org/)
 
+- Developing Diaita: nutrition assistant for cancer patients together with [Fundació Alicia](https://alicia.cat/) under [Horizon's Foodity program](https://foodity.eu/)
 - Developing search & recommendation engines for [wikiparfum.fr](https://www.wikiparfum.fr/home) 
 
 `January 2020 - July 2020`<br>__Researcher__, [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)
 
-- **[Characterizing Twitter users behaviour during the Spanish Covid-19 first wave](https://arxiv.org/abs/2012.06550)** [[VIDEO]](https://www.youtube.com/watch?v=6PgbidTgZeE), with [Luce Prignano](https://arxiv.org/search/cs?searchtype=author&query=Prignano%2C+L), [Albert Díaz-Guilera](https://arxiv.org/search/cs?searchtype=author&query=Díaz-Guilera%2C+A), [Emanuele Cozzo](https://arxiv.org/search/cs?searchtype=author&query=Cozzo%2C+E) @ [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)<br>
+- **[Characterizing Twitter users behaviour during the Spanish Covid-19 first wave](https://www.researchgate.net/publication/346973930_Characterizing_Twitter_users_behaviour_during_the_Spanish_Covid-19_first_wave)** [[VIDEO]](https://www.youtube.com/watch?v=6PgbidTgZeE), with [Luce Prignano](https://arxiv.org/search/cs?searchtype=author&query=Prignano%2C+L), [Albert Díaz-Guilera](https://arxiv.org/search/cs?searchtype=author&query=Díaz-Guilera%2C+A), [Emanuele Cozzo](https://arxiv.org/search/cs?searchtype=author&query=Cozzo%2C+E) @ [Institute of Complex Systems (UBICS)](http://ubics.ub.edu/)<br>
 
 `July 2019 - December 2019`<br>__Front-end developer__, [bestiario](http://bestiario.org/)
 

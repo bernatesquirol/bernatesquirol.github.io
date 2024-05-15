@@ -2,14 +2,17 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>README</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -20,8 +23,6 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
@@ -49,7 +50,7 @@ sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inh
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
 figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
+thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
@@ -65,18 +66,20 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
 .md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
@@ -84,12 +87,14 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -100,6 +105,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -126,22 +132,14 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -150,174 +148,125 @@ table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
 @media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
 
 
-/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
-
-@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
-
-/* =========== */
-
-/* pt-serif-regular - latin */
-/* pt-serif-italic - latin */
-/* pt-serif-700 - latin */
-/* pt-serif-700italic - latin */
 :root {
-	--active-file-bg-color: #dadada;
-	--active-file-bg-color: rgba(32, 43, 51, 0.63);
-	--active-file-text-color: white;
-	--bg-color: #f3f2ee;
-	--text-color: #1f0909;
-	--control-text-color: #444;
-	--rawblock-edit-panel-bd: #e5e5e5;
-
-	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-  --select-text-font-color: white;
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
 }
 
-pre {
-	--select-text-bg-color: #36284e;
-	--select-text-font-color: #fff;
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
-html {
-	font-size: 16px;
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
 }
-
-html, body {
-	background-color: #f3f2ee;
-	font-family: "PT Serif", 'Times New Roman', Times, serif;
-	color: #1f0909;
-	line-height: 1.5em;
-}
-
-/*#write {
-	overflow-x: auto;
-    max-width: initial;
-	padding-left: calc(50% - 17em);
-    padding-right: calc(50% - 17em);
-}
-
-@media (max-width: 36em) {
- 	#write {
- 		padding-left: 1em;
-    	padding-right: 1em;
- 	}
-}*/
 
 #write {
-	max-width: 40em;
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
 }
 
 @media only screen and (min-width: 1400px) {
 	#write {
-			max-width: 914px;
+		max-width: 1024px;
 	}
 }
 
-ol li {
-	list-style-type: decimal;
-	list-style-position: outside;
-}
-ul li {
-	list-style-type: disc;
-	list-style-position: outside;
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
 }
 
-ol,
-ul {
-	list-style: none;
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
 }
-
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* styles */
-
-/* ====== */
-
-/* headings */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: bold;
-}
-h1 {
-	font-size: 1.875em;
-	/*30 / 16*/
-	line-height: 1.6em;
-	/* 48 / 30*/
-	margin-top: 2em;
-}
-h2,
-h3 {
-	font-size: 1.3125em;
-	/*21 / 16*/
-	line-height: 1.15;
-	/*24 / 21*/
-	margin-top: 2.285714em;
-	/*48 / 21*/
-	margin-bottom: 1.15em;
-	/*24 / 21*/
-}
-h3 {
-	font-weight: normal;
-}
-h4 {
-	font-size: 1.125em;
-	/*18 / 16*/
-	margin-top: 2.67em;
-	/*48 / 18*/
-}
-h5,
-h6 {
-	font-size: 1em;
-	/*16*/
-}
-h1 {
-	border-bottom: 1px solid;
-	margin-bottom: 1.875em;
-	padding-bottom: 0.8125em;
-}
-/* links */
 
 a {
-	text-decoration: none;
-	color: #065588;
-}
-a:hover,
-a:active {
-	text-decoration: underline;
-}
-/* block spacing */
-
-p,
-blockquote,
-.md-fences {
-	margin-bottom: 1.5em;
+    color: #4183C4;
 }
 h1,
 h2,
@@ -325,434 +274,353 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 1.5em;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
 }
-/* blockquote */
-
-blockquote {
-	font-style: italic;
-	border-left: 5px solid;
-	margin-left: 2em;
-	padding-left: 1em;
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
 }
-/* lists */
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
 
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
 ul,
 ol {
-	margin: 0 0 1.5em 1.5em;
+    padding-left: 30px;
 }
-/* tables */
-.md-meta,.md-before, .md-after {
-	color:#999;
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
 }
-
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
 table {
-	margin-bottom: 1.5em;
-	/*24 / 16*/
-	font-size: 1em;
-	/* width: 100%; */
+    padding: 0;
+    word-break: initial;
 }
-thead th,
-tfoot th {
-	padding: .25em .25em .25em .4em;
-	text-transform: uppercase;
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
 }
-th {
-	text-align: left;
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
 }
-td {
-	vertical-align: top;
-	padding: .25em .25em .25em .4em;
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
 }
 
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
 code,
-.md-fences {
-	background-color: #dadada;
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
 }
 
 code {
-	padding-left: 2px;
-	padding-right: 2px;
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
 .md-fences {
-	margin-left: 2em;
-	margin-bottom: 3em;
-	padding-left: 1ch;
-	padding-right: 1ch;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
 }
 
-pre,
-code,
-tt {
-	font-size: .875em;
-	line-height: 1.714285em;
-}
-/* some fixes */
 
-h1 {
-	line-height: 1.3em;
-	font-weight: normal;
-	margin-bottom: 0.5em;
+.md-task-list-item > input {
+  margin-left: -1.3em;
 }
 
-p + ul,
-p + ol{
-	margin-top: .5em;
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
 }
 
-h3 + ul,
-h4 + ul,
-h5 + ul,
-h6 + ul,
-h3 + ol,
-h4 + ol,
-h5 + ol,
-h6 + ol {
-	margin-top: .5em;
+.md-fences {
+	background-color: #f8f8f8;
 }
-
-li > ul,
-li > ol {
-	margin-top: inherit;
-	margin-bottom: 0;
-}
-
-li ol>li {
-	list-style-type: lower-alpha;
-}
-
-li li ol>li{
-	list-style-type: lower-roman;
-}
-
-h2,
-h3 {
-	margin-bottom: .75em;
-}
-hr {
-	border-top: none;
-	border-right: none;
-	border-bottom: 1px solid;
-	border-left: none;
-}
-h1 {
-	border-color: #c5c5c5;
-}
-blockquote {
-	border-color: #bababa;
-	color: #656565;
-}
-
-blockquote ul,
-blockquote ol {
-	margin-left:0;
-}
-
-.ty-table-edit {
-	background-color: transparent;
-}
-thead {
-	background-color: #dadada;
-}
-tr:nth-child(even) {
-	background: #e8e7e7;
-}
-hr {
-	border-color: #c5c5c5;
-}
-.task-list{
-	padding-left: 1rem;
-}
-
-.md-task-list-item {
-	padding-left: 1.5rem;
-	list-style-type: none;
-}
-
-.md-task-list-item > input:before {
-	content: '\221A';
-	display: inline-block;
-	width: 1.25rem;
-  	height: 1.6rem;
-	vertical-align: middle;
-	text-align: center;
-	color: #ddd;
-	background-color: #F3F2EE;
-}
-
-.md-task-list-item > input:checked:before,
-.md-task-list-item > input[checked]:before{
-	color: inherit;
-}
-
 #write pre.md-meta-block {
-	min-height: 1.875rem;
-	color: #555;
-	border: 0px;
-	background: transparent;
-	margin-top: -4px;
-	margin-left: 1em;
-	margin-top: 1em;
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
 }
 
-.md-image>.md-meta {
-	color: #9B5146;
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
 }
 
-.md-image>.md-meta{
-	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+.md-mathjax-midline {
+    background: #fafafa;
 }
-
 
 #write>h3.md-focus:before{
-	left: -1.5rem;
-	color:#999;
-	border-color:#999;
+	left: -1.5625rem;
+	top: .375rem;
 }
 #write>h4.md-focus:before{
-	left: -1.5rem;
-	top: .25rem;
-	color:#999;
-	border-color:#999;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
 #write>h5.md-focus:before{
-	left: -1.5rem;
-	top: .0.3125rem;
-	color:#999;
-	border-color:#999;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
 #write>h6.md-focus:before{
-	left: -1.5rem;
-	top: 0.3125rem;
-	color:#999;
-	border-color:#999;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
-
-.md-toc:focus .md-toc-content{
-	margin-top: 19px;
-}
-
-.md-toc-content:empty:before{
-	color: #065588;
-}
-.md-toc-item {
-	color: #065588;
-}
-#write div.md-toc-tooltip {
-	background-color: #f3f2ee;
-}
-
-#typora-sidebar {
-	background-color: #f3f2ee;
-	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
-  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
-}
-
-.pin-outline #typora-sidebar {
-	background: inherit;
-	box-shadow: none;
-	border-right: 1px dashed;
-}
-
-.pin-outline #typora-sidebar:hover .outline-title-wrapper {
-	border-left:1px dashed;
-}
-
-.outline-item:hover {
-  background-color: #dadada;
-  border-left: 28px solid #dadada;
-  border-right: 18px solid #dadada;
-}
-
-.typora-node .outline-item:hover {
-  	border-right: 28px solid #dadada;
-}
-
-.outline-expander:before {
-  content: "\f0da";
-  font-family: FontAwesome;
-  font-size:14px;
-  top: 1px;
-}
-
-.outline-expander:hover:before,
-.outline-item-open>.outline-item>.outline-expander:before {
-  content: "\f0d7";
-}
-
-.modal-content {
-	background-color: #f3f2ee;
-}
-
-.auto-suggest-container ul li {
-	list-style-type: none;
-}
-
-/** UI for electron */
-
-.megamenu-menu,
-#top-titlebar, #top-titlebar *,
-.megamenu-content {
-	background: #f3f2ee;
-	color: #1f0909;
-}
-
-.megamenu-menu-header {
-	border-bottom: 1px dashed #202B33;
-}
-
-.megamenu-menu {
-	box-shadow: none;
-	border-right: 1px dashed;
-}
-
-header, .context-menu, .megamenu-content, footer {
-	font-family: "PT Serif", 'Times New Roman', Times, serif;
-    color: #1f0909;
-}
-
-#megamenu-back-btn {
-	color: #1f0909;
-	border-color: #1f0909;
-}
-
-.megamenu-menu-header #megamenu-menu-header-title:before {
-	color: #1f0909;
-}
-
-.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
-	color: inherit;
-	background-color: #e8e7df;
-}
-
-.long-btn:hover {
-	background-color: #e8e7df;
-}
-
-#recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: transparent !important;
-}
-
-.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
     color: inherit;
 }
 
-.megamenu-menu-panel .btn {
-	background-color: #D2D1D1;
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
 }
 
-.btn-default {
-	background-color: transparent;
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
 }
 
-.typora-sourceview-on #toggle-sourceview-btn,
-.ty-show-word-count #footer-word-count {
-	background: #c7c5c5;
+.sidebar-tabs {
+    border-bottom: none;
 }
 
 #typora-quick-open {
-    background-color: inherit;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
 }
 
-.md-diagram-panel {
-	margin-top: 8px;
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
 }
 
-.file-list-item-file-name {
-	font-weight: initial;
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-.file-list-item-summary {
-	opacity: 1;
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-.file-list-item {
-	color: #777;
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
 }
 
-.file-list-item.active {
-	background-color: inherit;
-	color: black;
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
 }
 
-.ty-side-sort-btn.active {
-	background-color: inherit;
+.mac-os #write{
+    caret-color: AccentColor;
 }
 
-.file-list-item.active .file-list-item-file-name  {
-	font-weight: bold;
+.md-lang {
+    color: #b4654d;
 }
 
-.file-list-item{
-    opacity:1 !important;
-}
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
 
-.file-library-node.active>.file-node-background{
-	background-color: rgba(32, 43, 51, 0.63);
-	background-color: var(--active-file-bg-color);
-}
-
-.file-tree-node.active>.file-node-content{
-	color: white;
-	color: var(--active-file-text-color);
-}
-
-.md-task-list-item>input {
-	margin-left: -1.7em;
-	margin-top: calc(1rem - 12px);
-}
-
-input {
-	border: 1px solid #aaa;
-}
-
-.megamenu-menu-header #megamenu-menu-header-title,
-.megamenu-menu-header:hover, 
-.megamenu-menu-header:focus {
-	color: inherit;
+#md-notification .btn {
+    border: 0;
 }
 
 .dropdown-menu .divider {
-	border-color: #e5e5e5;
+    border-color: #e5e5e5;
+    opacity: 0.4;
 }
 
-/* https://github.com/typora/typora-issues/issues/2046 */
-.os-windows-7 strong,
-.os-windows-7 strong  {
-	font-weight: 760;
+.ty-preferences .window-content {
+    background-color: #fafafa;
 }
 
-.ty-preferences .btn-default {
-	background: transparent;
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
 }
 
-.ty-preferences .window-header {
-	border-bottom: 1px dashed #202B33;
-	box-shadow: none;
-}
-
-#sidebar-loading-template, #sidebar-loading-template.file-list-item {
-	color: #777;
-}
-
-.searchpanel-search-option-btn.active {
-	background: #777;
-	color: white;
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
 }
 
 
-</style>
+
+</style><title>README</title>
 </head>
-<body class='typora-export os-windows'>
-<div id='write'  class=''><h1 id="profile-photo" style="text-align:center;padding-bottom:10;margin-bottom:10;margin-top:10">
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id="profile-photo" style='text-align:center;padding-bottom:10;margin-bottom:10;margin-top:10'>
     Bernat Esquirol Juanola
-</h1><div id="profile-photo" style="text-align:center;">
-    <img src="https://drive.google.com/thumbnail?id=1_z1Pm-yG2jOWiTarNd9Gr3xQz6B5uYkH" style="border-radius: 50px" width="100px">
+</h1>
+<div id="profile-photo" style='text-align:center;'>
+    <img src="https://drive.google.com/thumbnail?id=1_z1Pm-yG2jOWiTarNd9Gr3xQz6B5uYkH" style='border-radius: 50px' width='100px'/>
 </div>
-<div id="webaddress" style="text-align:center;padding-bottom:10px;line-height:40px">
-<a href="mailto:bernatesquirol@gmail.com">bernatesquirol@gmail.com</a> <br>
+<div id="webaddress"  style='text-align:center;padding-bottom:10px;line-height:40px'>
+<a href="mailto:bernatesquirol@gmail.com">bernatesquirol@gmail.com</a> <br/>
   <a href="https://devpost.com/bernatesquirol">devpost/bernatesquirol</a> | <a href="https://observablehq.com/@bernatesquirol">observablehq/bernatesquirol</a> | <a href="https://github.com/bernatesquirol">github/bernatesquirol</a> 
-</div><hr /><h2><a name="work-experience" class="md-header-anchor"></a><span>Work experience</span></h2><p><code>February 2020 -</code><br><strong><span>Data scientist</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><ul><li><span>Developing search &amp; recommendation engines for </span><a href='https://www.wikiparfum.fr/home'><span>wikiparfum.fr</span></a><span> </span></li></ul><p><code>January 2020 - July 2020</code><br><strong><span>Researcher</span></strong><span>, </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a></p><ul><li><strong><a href='https://arxiv.org/abs/2012.06550'><span>Characterizing Twitter users behaviour during the Spanish Covid-19 first wave</span></a></strong><span> </span><a href='https://www.youtube.com/watch?v=6PgbidTgZeE'><span>[VIDEO]</span></a><span>, with </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Prignano%2C+L'><span>Luce Prignano</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Díaz-Guilera%2C+A'><span>Albert Díaz-Guilera</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Cozzo%2C+E'><span>Emanuele Cozzo</span></a><span> @ </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a><br></li></ul><p><code>July 2019 - December 2019</code><br><strong><span>Front-end developer</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>July 2018 - June 2019</code><br><strong><span>GIS data analyst</span></strong><span>, </span><a href='http://urbanisme.amb.cat/'><span>PDU, Àrea Metropolitana de Barcelona (AMB)</span></a></p><ul><li><strong><a href='http://diposit.ub.edu/dspace/handle/2445/143519'><span>Data flow control framework for indicator-based policy making: an urban planning example</span></a></strong><span>, A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment, with </span><a href='https://scholar.google.es/citations?user=Fr3EgV8AAAAJ'><span>Javier Ortigosa</span></a><span> @ AMB</span><br></li></ul><p><code>February 2018 - June 2018</code><br><strong><span>Scratch teacher</span></strong><span>, </span><a href='https://techsparkacademy.ch/en/home/'><span>TechSpark Academy</span></a></p><p><code>July 2015 - September 2016</code><br><strong><span>Full-stack developer</span></strong><span>, </span><a href='https://www.linkedin.com/company/getupcode-com/'><span>Getupcode.com</span></a></p><p><code>February 2016; February 2017</code><br><strong><span>IT technician</span></strong><span>, </span><a href='https://www.mwcbarcelona.com/'><span>MWC</span></a><span> @ Fira Barcelona</span></p><hr /><h2><a name="education" class="md-header-anchor"></a><span>Education</span></h2><p><strong><span>Universitat de Barcelona, Barcelona, Spain</span></strong></p><p><code>September 2019 - June 2020</code><br></p><ul><li><span>Master in the </span><a href='http://www.ub.edu/datascience/master/'><span>Fundamental Principles of Data Science</span></a></li></ul><p><code>2014-2019</code><br></p><ul><li><span>Bachelor in </span><a href='https://mat.ub.edu/graumatematiques/'><span>Mathematics</span></a></li><li><span>Bachelor in </span><a href='https://mat.ub.edu/grauinformatica/'><span>Computer Science</span></a></li></ul><p><strong><span>EPFL, Lausanne, Switzerland</span></strong></p><p><code>February 2018 - July 2018</code><br></p><ul><li><span>Exchange program at </span><a href='https://ic.epfl.ch/computer-science'><span>Computer Science Section</span></a></li></ul><hr /><h2><a name="other" class="md-header-anchor"></a><span>Other</span></h2><h4><a name="volunteering" class="md-header-anchor"></a><span>Volunteering</span></h4><p><code>September 2020 - September 2021:</code><span> Helping </span><a href='https://www.assis.cat/'><span>ASSÍS Centre d&#39;Acollida</span></a><span> analyse and visualize data from people experiencing homelessness @ </span><a href='https://twitter.com/dataforgoodbcn'><span>DataForGoodBCN</span></a></p><h4><a name="hackathons" class="md-header-anchor"></a><span>Hackathons</span></h4><p><code>October 2021</code><span>: 2nd prize @ </span><a href='https://aimusicfestival.eu/es/programs/2021/areas/hackathons'><span>EducationalHack by Ableton, AI+Music festival</span></a></p><p><code>April 2020</code><span>: Participant @ </span><a href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json'><span>MUV Datathon</span></a></p><p><code>April 2020</code><span>: 7th position @ </span><a href='https://hackovid.cat/solutions?locale=en&amp;filter[search_text]=splittt'><span>Hackovid</span></a></p><p><code>March 2020</code><span>: Winner @ </span><a href='https://barcelona.muv2020.eu/Hackathon/'><span>MUV Hackathon Barcelona</span></a></p><p><code>November 2019</code><span>: Winner @ </span><a href='https://godatathon.com/'><span>Novartis datathon</span></a></p><p><code>May 2019</code><span>: Winner @ </span><a href='https://kimglobal.com/ca/evento/copernicus-hackathon-barcelona/'><span>Barcelona Copernicus Hackathon</span></a></p><p>&nbsp;</p><p>&nbsp;</p><p><span>;)</span></p></div>
+</div><p>&nbsp;</p><hr /><h2 id='work-experience'><span>Work experience</span></h2><p><code>March 2024 -</code><br><strong><span>Game developer / producer</span></strong><span>, </span><a href='https://mut.mmm.page/'><span>mut</span></a></p><ul><li><p><span>Solo dev adventure creating mut, a game to understand music</span></p></li></ul><p><code>February 2020 -</code><br><strong><span>Data scientist</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><ul><li><p><span>Developing Diaita: nutrition assistant for cancer patients together with </span><a href='https://alicia.cat/'><span>Fundació Alicia</span></a><span> under </span><a href='https://foodity.eu/'><span>Horizon&#39;s Foodity program</span></a></p></li><li><p><span>Developing search &amp; recommendation engines for </span><a href='https://www.wikiparfum.fr/home'><span>wikiparfum.fr</span></a><span> </span></p></li></ul><p><code>January 2020 - July 2020</code><br><strong><span>Researcher</span></strong><span>, </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a></p><ul><li><p><strong><a href='https://www.researchgate.net/publication/346973930_Characterizing_Twitter_users_behaviour_during_the_Spanish_Covid-19_first_wave'><span>Characterizing Twitter users behaviour during the Spanish Covid-19 first wave</span></a></strong><span> </span><a href='https://www.youtube.com/watch?v=6PgbidTgZeE'><span>[VIDEO]</span></a><span>, with </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Prignano%2C+L'><span>Luce Prignano</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Díaz-Guilera%2C+A'><span>Albert Díaz-Guilera</span></a><span>, </span><a href='https://arxiv.org/search/cs?searchtype=author&amp;query=Cozzo%2C+E'><span>Emanuele Cozzo</span></a><span> @ </span><a href='http://ubics.ub.edu/'><span>Institute of Complex Systems (UBICS)</span></a><br></p></li></ul><p><code>July 2019 - December 2019</code><br><strong><span>Front-end developer</span></strong><span>, </span><a href='http://bestiario.org/'><span>bestiario</span></a></p><p><code>July 2018 - June 2019</code><br><strong><span>GIS data analyst</span></strong><span>, </span><a href='http://urbanisme.amb.cat/'><span>PDU, Àrea Metropolitana de Barcelona (AMB)</span></a></p><ul><li><p><strong><a href='http://diposit.ub.edu/dspace/handle/2445/143519'><span>Data flow control framework for indicator-based policy making: an urban planning example</span></a></strong><span>, A tool based on draw.io to document and control the data flow of an indicator-based policy in the urban planning environment, with </span><a href='https://scholar.google.es/citations?user=Fr3EgV8AAAAJ'><span>Javier Ortigosa</span></a><span> @ AMB</span><br></p></li></ul><p><code>February 2018 - June 2018</code><br><strong><span>Scratch teacher</span></strong><span>, </span><a href='https://techsparkacademy.ch/en/home/'><span>TechSpark Academy</span></a></p><p><code>July 2015 - September 2016</code><br><strong><span>Full-stack developer</span></strong><span>, </span><a href='https://www.linkedin.com/company/getupcode-com/'><span>Getupcode.com</span></a></p><p><code>February 2016; February 2017</code><br><strong><span>IT technician</span></strong><span>, </span><a href='https://www.mwcbarcelona.com/'><span>MWC</span></a><span> @ Fira Barcelona</span></p><hr /><h2 id='education'><span>Education</span></h2><p><strong><span>Universitat de Barcelona, Barcelona, Spain</span></strong></p><p><code>September 2019 - June 2020</code><br></p><ul><li><p><span>Master in the </span><a href='http://www.ub.edu/datascience/master/'><span>Fundamental Principles of Data Science</span></a></p></li></ul><p><code>2014-2019</code><br></p><ul><li><p><span>Bachelor in </span><a href='https://mat.ub.edu/graumatematiques/'><span>Mathematics</span></a></p></li><li><p><span>Bachelor in </span><a href='https://mat.ub.edu/grauinformatica/'><span>Computer Science</span></a></p></li></ul><p><strong><span>EPFL, Lausanne, Switzerland</span></strong></p><p><code>February 2018 - July 2018</code><br></p><ul><li><p><span>Exchange program at </span><a href='https://ic.epfl.ch/computer-science'><span>Computer Science Section</span></a></p></li></ul><hr /><h2 id='other'><span>Other</span></h2><h4 id='volunteering'><span>Volunteering</span></h4><p><code>September 2020 - September 2021:</code><span> Helping </span><a href='https://www.assis.cat/'><span>ASSÍS Centre d&#39;Acollida</span></a><span> analyse and visualize data from people experiencing homelessness @ </span><a href='https://twitter.com/dataforgoodbcn'><span>DataForGoodBCN</span></a></p><h4 id='hackathons'><span>Hackathons</span></h4><p><code>October 2021</code><span>: 2nd prize @ </span><a href='https://aimusicfestival.eu/es/programs/2021/areas/hackathons'><span>EducationalHack by Ableton, AI+Music festival</span></a></p><p><code>April 2020</code><span>: Participant @ </span><a href='https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/5ddfqkby1cmrstz/keplergl_awjuzlr.json'><span>MUV Datathon</span></a></p><p><code>April 2020</code><span>: 7th position @ </span><a href='https://hackovid.cat/solutions?locale=en&amp;filter[search_text]=splittt'><span>Hackovid</span></a></p><p><code>March 2020</code><span>: Winner @ </span><a href='https://barcelona.muv2020.eu/Hackathon/'><span>MUV Hackathon Barcelona</span></a></p><p><code>November 2019</code><span>: Winner @ </span><a href='https://godatathon.com/'><span>Novartis datathon</span></a></p><p><code>May 2019</code><span>: Winner @ </span><a href='https://kimglobal.com/ca/evento/copernicus-hackathon-barcelona/'><span>Barcelona Copernicus Hackathon</span></a></p><p>&nbsp;</p><p>&nbsp;</p><p><span>;)</span></p></div></div>
 </body>
 </html>
